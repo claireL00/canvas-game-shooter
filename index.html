@@ -1,0 +1,39 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body{
+        margin:0;
+        background:black;
+    }
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+<div class="fixed text-white text-sm ml-2 mt-1 select-none">
+    <span>Score: </span>
+    <span id="scoreEl">0</span>
+</div>
+
+<div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+    <div class="bg-white max-w-md w-full p-6 text-center">
+        <h1 class="text-4xl font-bold leading-none" id="bigScoreEl">0</h1>
+        <p class="text-sm text-gray-700 mb-4">Points</p>
+        <div>
+            <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id="startGameBtn">Start Game</button>
+        </div>
+    </div>
+</div>
+<audio id="arcade">
+    <source src="./media/Arcade Game BGM 7.mp3" type="audio/mp3">
+</audio>
+<audio id="gameOver">
+    <source src="./media/game over.mp3" type="audio/mp3">
+</audio>
+<audio id="hit">
+    <source src="./media/mixkit-typewriter-hit-1362.mp3" type="audio/mp3">
+</audio>
+<canvas></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./index.js"></script>
